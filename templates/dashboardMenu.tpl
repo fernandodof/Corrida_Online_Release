@@ -21,26 +21,26 @@
             </div>
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="dashboard" class="dropdown-toggle" data-toggle="dropdown">{$smarty.session.name}</a>
+                    <a href="{$templateRoot}pages/dashboard" class="dropdown-toggle">{$smarty.session.name}</a>
                 </li>
             </ul>    
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse" id="navBar">
                 <ul class="nav navbar-nav side-nav">
                     <li class='menu-option' id="first-option">
-                        <a href="dashboard"><i class="fa fa-fw fa-table"></i> Corridas</a>
+                        <a href="{$templateRoot}pages/dashboard"><i class="fa fa-fw fa-table"></i> Corridas</a>
                     </li>
                     <li class='menu-option' id="second-option">
-                        <a href="newActivity"><i class="fa fa-fw fa-plus"></i> Nova Corrida</a>
+                        <a href="{$templateRoot}pages/newActivity"><i class="fa fa-fw fa-plus"></i> Nova Corrida</a>
                     </li>
                     <li class='menu-option' id="thrid-option">
-                        <a href="search"><i class="fa fa-fw fa-search"></i> Pesquisar</a>
+                        <a href="{$templateRoot}pages/search"><i class="fa fa-fw fa-search"></i> Pesquisar</a>
                     </li>
                     <li class='menu-option'id="fourth-option" >
-                        <a href="profile"><i class="fa fa-fw fa-user"></i> Cadastro</a>
+                        <a href="{$templateRoot}pages/profile"><i class="fa fa-fw fa-user"></i> Cadastro</a>
                     </li>
                     <li class='menu-option' id="fifth-option">
-                        <a href="../pages/logout"><i class="fa fw fa-power-off red-icon"></i> Sair</a>
+                        <a href="{$templateRoot}pages/logout"><i class="fa fw fa-power-off red-icon"></i> Sair</a>
                     </li>
                 </ul>
             </div>

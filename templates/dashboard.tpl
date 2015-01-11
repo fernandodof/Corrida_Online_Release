@@ -2,11 +2,6 @@
 <link href="{$templateRoot}libs/DataTables-1.10.4/extensions/Responsive/css/dataTables.responsive.css">
 <link href="{$templateRoot}libs/DataTables-1.10.4/extensions/TableTools/css/dataTables.tableTools.min.css">
 <link href="{$templateRoot}css/dashboard.css" rel="stylesheet">
-<script src="{$templateRoot}libs/DataTables-1.10.4/media/js/jquery.dataTables.min.js"></script>
-<script src="{$templateRoot}libs/DataTables-1.10.4/extensions/TableTools/js/dataTables.tableToolsModified.js"></script>
-<script src="{$templateRoot}libs/DataTables-1.10.4/bootstrapDatatableTheme/dataTables.bootstrap.js"></script>
-<script src="{$templateRoot}libs/bootstrap/js/bootstrap-popover.js"></script>
-<script src="{$templateRoot}js/dashboard.js"></script>
 <div id="page-wrapper">
 
     <div class="container-fluid">
@@ -59,4 +54,9 @@
 <!-- /#page-wrapper -->
 </div>
 </body>
+<script src="{$templateRoot}libs/DataTables-1.10.4/media/js/jquery.dataTables.min.js"></script>
+<script src="{$templateRoot}libs/DataTables-1.10.4/extensions/TableTools/js/dataTables.tableToolsModified.js"></script>
+<script src="{$templateRoot}libs/DataTables-1.10.4/bootstrapDatatableTheme/dataTables.bootstrap.js"></script>
+<script src="{$templateRoot}libs/bootstrap/js/bootstrap-popover.js"></script>
+<script src="{$templateRoot}js/dashboard.js"></script>
 </html>
