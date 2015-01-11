@@ -1,0 +1,234 @@
+body{
+    background: url('http://corridas.gear.host/images/alone-runner.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    z-index: 99;
+    /*margin-top: -50px;*/
+}
+
+p.form-title{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form{
+    width: 350px;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="submit"]{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover{
+    transition: background-color 0.5s ease;
+}
+
+form.login .remember-forgot{
+    float: left;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
+form.login .forgot-pass-content{
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*form.login label, form.login a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}*/
+
+form.login a{
+    transition: color 0.5s ease;
+}
+
+form.login a:hover{
+    color: #E33A19;
+}
+
+form.login ::-webkit-input-placeholder {
+    color:#444444;
+}
+form.login ::-moz-placeholder {
+    color:#666666; 
+} /* firefox 19+ */
+form.login :-ms-input-placeholder { 
+    color:#666666; 
+}
+/* ie */
+form.login input:-moz-placeholder {
+    color:#666666; 
+}
+
+.pr-wrap{
+    z-index: 999;
+    display: none;
+    margin-top: -150px;
+}
+
+.show-pass-reset{
+    display: block !important;
+}
+
+.pass-reset{
+    margin: 0 auto;
+    width: 350px;
+    z-index: 999;
+    background: #FFFFFF;
+    padding: 20px 15px;
+}
+
+.pass-reset #email, #requestRecover{
+    width: 92%;
+}
+
+@media only screen and (min-width : 350px) {
+    .pass-reset{
+        margin-top: 255px;
+    }
+
+    .wrap{
+        margin-left: -15px;
+    }
+
+    .pr-wrap{
+        margin-left: -15px;
+    }
+
+
+}
+
+.pass-reset input[type="email"]{
+    /*    width: 100%;
+        margin: 5px 0 0 0;
+        padding: 5px 10px;
+        background: 0;
+        border: 0;
+        border-bottom: 1px solid #000000;
+        outline: 0;
+        font-style: italic;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        color: #000000;
+        outline: 0;*/
+}
+
+.pass-reset button[type="submit"]{
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.pass-reset button[type="submit"]:hover{
+    transition: background-color 0.5s ease;
+}
+
+#loginErrorMsg{
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    display: none;
+}
+
+#loginLoader, #loginLoader1{
+    width: 21px;
+    height: 21px;
+    display: none;
+}
+
+.loginInfo{
+    border-color: red;
+}
+
+.pr-wrap i{
+    margin-right: 30px;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin 1.2s infinite linear;
+    -webkit-animation: spin2 1.2s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+#quote{
+    position: absolute;
+    /* Set the fixed height of the footer here */
+    margin-bottom: 0px;
+    margin-top: 40px;
+    bottom: 0;
+}
+
+/*@media only screen and (min-width : 480px) {
+    #quote{
+        position: static;
+    }
+}*/
+
+#quote1{
+    margin-top: 35px;
+}
+
+#quote p, #quote1 p{
+    color: white;
+}
+
+#quote p span, #quote1 p span{
+    color: #BCC6CC;
+}
+
+#quote footer, #quote1 footer{
+    color: #B6B6B4;
+}

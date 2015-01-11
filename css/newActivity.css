@@ -1,0 +1,88 @@
+#lbDistancia{
+    font-size: 18px;
+    width: 100%;
+}
+
+#time{
+    background: white;
+    text-align: left;
+    border-radius: 5px 0 0 5px;
+}
+
+#notes{
+    resize: none;
+    height: 100px;
+}
+
+#sandbox-container{
+    margin-bottom: 15px;
+}
+
+#runDate{
+    background: white;
+}
+
+#distance-container{
+    width: 125px;
+}
+
+#distance{
+    width: 100px;
+}
+
+#distance-radio-btn{
+    width: 85px;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#distance-radio-btn .radio{
+   margin-left: -15px; 
+}
+
+#notesGroup {
+    padding: 15px;
+}
+
+#save{
+    margin-right: 15px;
+    height: 54px;
+}
+
+#run-info{
+    margin-top: 30px;
+    margin-left: 15px;
+    float: left;
+    width: 100%;
+}
+
+
+#run-info input{
+    width: 220px;
+    background: #337AB7;
+    color: white;
+}
+
+#running-icon{
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.group{
+    margin-bottom: 15px;
+}
+
+#newRunForm .has-feedback .form-control-feedback {
+    top: 8px;
+}
+
+#loader{
+    display: none;
+}
+
+.picker__select--year, .picker__select--month{
+    padding-top: 2px;
+}

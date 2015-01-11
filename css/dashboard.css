@@ -1,0 +1,71 @@
+#runs {
+    width: 100%;
+}
+
+#runs tbody tr.odd {
+    background-color: #F1F1F1;
+}
+
+.pagination, #runs_filter{
+    float: right;
+}
+
+#runs th, td { 
+    white-space: nowrap; 
+}
+
+div.dataTables_wrapper {
+    /*width: 90%;*/
+    overflow: hidden;
+}
+
+#runs .notes-btn{
+    color: #5C5858;
+}
+
+#summary{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#summary #summary-wrapper .summary-content img{
+    /*background: darkslateblue;*/
+    /*height: 80px;*/
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+#summary #summary-wrapper .summary-content{
+}
+
+#summaryButton{
+    margin-top: 15px;
+}
+
+.rowSelected, #runs tr:hover  {
+    background-color: #B0BED9 !important;
+    color: black;
+}
+
+
+
+@-moz-document url-prefix() {
+    fieldset { 
+        display: table-cell;
+    }
+}
+
+.popover {
+    background: #222222;
+    color: white;
+}
+
+.popover .popover-title {
+    background-color: #848482;
+
+}
+
+.table-responsive .DTTT{
+    margin-bottom: 12px;
+}

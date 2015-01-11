@@ -1,0 +1,50 @@
+p.form-title{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#loginLoader, #loginLoader1{
+    width: 21px;
+    height: 21px;
+    display: none;
+}
+
+#editBtn{
+    /*margin-bottom: 10px;*/
+}
+
+.form-title{
+    margin-bottom: 20px;
+}
+
+#wrapEdit{
+    margin-bottom: 30px;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin 1.2s infinite linear;
+    -webkit-animation: spin2 1.2s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+.has-error .form-control-feedback {
+    color: #E74C3C;
+}
+.has-success .form-control-feedback {
+    color: #18BCA0;
+}

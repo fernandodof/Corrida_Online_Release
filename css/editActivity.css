@@ -1,0 +1,11 @@
+.panel #edit{
+    /*    padding-left: 2px;
+        padding-right: 2px;
+        clear: right;*/
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+input:disabled {
+    background: #DDDDDD !important;
+}
