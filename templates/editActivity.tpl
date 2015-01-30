@@ -26,49 +26,49 @@
                             <h3 class="panel-title">Editar <i class="fa fa-fw fa-edit"></i></h3>
                         </div>
                         <div class="panel panel-body">
-                            <div class="col-lg-12">
+                            {*<div class="col-lg-12">
                                 <a class="btn btn-default btn-lg pull-left editToogle" id="edit" onclick="edit();">Editar <span class="fa fa-fw fa-edit"></span></a>
-                            </div>
+                            </div>*}
                             <form method="POST" id="newRunForm">
                                 <input type="hidden" id="runId" value="{$run->getId()}">
                                 <div class="col-md-7">
                                     <div id="sandbox-container" class="form-group">
                                         <div class="form-group-lg input-group date">
-                                            <input type="text" id="runDate" name="runDate" disabled placeholder="Data da corrida" value="{$runDate}" class="input-lg form-control editToogle"><span id="cal" class="clendar-icon input-group-addon"><i class="fa fa-fw fa-calendar"></i></span>
+                                            <input type="text" id="runDate" name="runDate" placeholder="Data da corrida" value="{$runDate}" class="input-lg form-control editToogle"><span id="cal" class="clendar-icon input-group-addon"><i class="fa fa-fw fa-calendar"></i></span>
                                         </div>
                                     </div>
 
                                     <div id="time-container" class="form-group">
                                         <small> Tempo hh:mm:ss</small>
                                         <div class="input-group bootstrap-timepicker time">
-                                            <input id="time" type="text" name="time" disabled onchange="calculateSpeedPace();" value="{$run->getFullTime()}" class="input-lg form-control editToogle input-group-addon">
+                                            <input id="time" type="text" name="time" onchange="calculateSpeedPace();" value="{$run->getFullTime()}" class="input-lg form-control editToogle input-group-addon">
                                             <span class="input-group-addon"><i class="fa fa-fw fa-clock-o"></i></span>
                                         </div>
                                     </div>
                                     <label id="lbDistancia">Distância: </label>
                                     <div id="distance-container" class="col-xs-12 row pull-left">
                                         <div class="form-group pull-left form-group-lg">
-                                            <input type="text" name="distance" id="distance" disabled onkeyup="calculateSpeedPace();" value="{$run->getDistance()}" pattern="[0-9]+([\.|,][0-9]+)?" oninvalid="setCustomValidity('Distancia Invalida')" class="form-control editToogle">
+                                            <input type="text" name="distance" id="distance" onkeyup="calculateSpeedPace();" value="{$run->getDistance()}" pattern="[0-9]+([\.|,][0-9]+)?" oninvalid="setCustomValidity('Distancia Invalida')" class="form-control editToogle">
                                         </div>
                                     </div>
                                     <div class="pull-left" id="distance-radio-btn">
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" checked onclick="calculateSpeedPace();" class="editToogle" disabled name="distanceUnit" value="k" /> Km
+                                                <input type="radio" checked onclick="calculateSpeedPace();" class="editToogle" name="distanceUnit" value="k" /> Km
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" onclick="calculateSpeedPace();"  class="editToogle" disabled name="distanceUnit" value="m" /> Metros
+                                                <input type="radio" onclick="calculateSpeedPace();"  class="editToogle" name="distanceUnit" value="m" /> Metros
                                             </label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group form-group-lg" id="notesGroup">
-                                    <textarea name="notes" placeholder="Observações" id="notes" disabled class="form-control editToogle">{$run->getNotes()}</textarea>
+                                    <textarea name="notes" placeholder="Observações" id="notes" class="form-control editToogle">{$run->getNotes()}</textarea>
                                 </div>
-                                <button type="submit" class="btn btn-success btn-lg pull-right editToogle" disabled id="save">Salvar <span id="loader"><img src="{$templateRoot}/images/loader/loginLoader.gif"></span></button>
+                                <button type="submit" class="btn btn-success btn-lg pull-right editToogle" id="save">Salvar <span id="loader"><img src="{$templateRoot}/images/loader/loginLoader.gif"></span></button>
                             </form>
                             <div id="run-info">
                                 <div class="pull-left">

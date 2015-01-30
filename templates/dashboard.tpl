@@ -13,15 +13,15 @@
                 <div id="summary" class="collapse col-lg-12">
                     <div id="summary-wrapper" class="col-lg-12">
                         <div class="col-lg-4 well well-sm summary-content">
-                            <img src="{$templateRoot}images/runer.svg">
+                            <img src="{$templateRoot}images/runer.png">
                             <h4>Corridas: <small>{$summary['totalRuns']}</small></h4>
                         </div>
                         <div class="col-lg-4 well well-sm summary-content">
-                            <img src="{$templateRoot}images/distance.svg">
+                            <img src="{$templateRoot}images/distance.png">
                             <h4>Distancia: <small>{$summary['totalDistance']}</small></h4>
                         </div>
                         <div class="col-lg-4 well well-sm summary-content">
-                            <img src="{$templateRoot}images/chronometer.svg">
+                            <img src="{$templateRoot}images/chronometer.png">
                             <h4>Tempo: <small>{$summary['totalTime']}</small></h4>
                         </div>
                     </div>

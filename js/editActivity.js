@@ -116,9 +116,8 @@ function editActivity() {
         data: data,
         success: function (serverResponse) {
             if (serverResponse === '1') {
-                resetMyForm($('#newRunForm'));
                 alertify.alert('Corrida editada com sucesso');
-                $('#loader').hide();
+                    $('#loader').hide();
             } else {
                 $('#loader').hide();
                 alertify.alert('Ocorreu um erro na transmissão do dados, tente novamente mais tarde');

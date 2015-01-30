@@ -46,9 +46,10 @@ function convertToMinutes(str) {
 
 function resetMyForm($form) {
     $form.find('input:text, input:password, input:file, select, textarea').val('');
-    $form.find('input:radio, input:checkbox').removeAttr('checked').removeAttr('selected');
+    $form.find('input:checkbox').removeAttr('selected');
+//    $form.find('input:radio').removeAttr('checked');
     $('#time').val('00:00:00');
-    $form.data('bootstrapValidator').resetForm();
+//    $form.data('bootstrapValidator').resetForm();
 }
 
 

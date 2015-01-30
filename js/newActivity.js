@@ -1,4 +1,5 @@
 function submitNewRunForm() {
+    calculateSpeedPace();
     var date = $('#runDate').val();
     var time = convertToSeconds($('#time').val());
     var distance = $('#distance').val();
@@ -14,7 +15,7 @@ function submitNewRunForm() {
 
     $('#loader').show();
 
-    var url = $('#templateRoot').val()+'src/app/ajaxReceivers/addNewRun.php';
+    var url = $('#templateRoot').val() + 'src/app/ajaxReceivers/addNewRun.php';
     $.ajax({
         type: "POST",
         url: url,
@@ -23,8 +24,10 @@ function submitNewRunForm() {
         success: function (serverResponse) {
             if (serverResponse === '1') {
                 resetMyForm($('#newRunForm'));
+                $("#km").trigger("click");
                 $('#avgPace').val('');
                 $('#avgSpeed').val('');
+                $('#newRunForm').bootstrapValidator('resetForm', true);
                 alertify.alert('Nova Corrida adicionada com sucesso');
                 $('#loader').hide();
             } else {
@@ -66,7 +69,7 @@ function setUpFormValidation() {
     };
 
     $('#newRunForm').bootstrapValidator({
-        live : 'disabled',
+        live: 'disabled',
         fields: {
             runDate: {
                 validators: {
@@ -134,4 +137,5 @@ function setUpFormValidation() {
 $(document).ready(function () {
     setUpFormValidation();
     $('#second-option').addClass('active');
+    $("#km").trigger("click");
 });

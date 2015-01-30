@@ -38,19 +38,19 @@
                                     </div>
                                     <label id="lbDistancia">Distância: </label>
                                     <div id="distance-container" class="col-xs-12 row pull-left">
-                                        <div class="form-group pull-left form-group-lg">
-                                            <input type="text" name="distance" id="distance" onkeyup="calculateSpeedPace();" pattern="[0-9]+([\.|,][0-9]+)?" oninvalid="setCustomValidity('Distancia Invalida')" class="form-control">
+                                        <div class="form-group pull-left form-group-lg"> 
+                                            <input type="text" name="distance" id="distance" onchange="calculateSpeedPace();" onkeydown="calculateSpeedPace();" onkeyup="calculateSpeedPace();" pattern="[0-9]+([\.|,][0-9]+)?" oninvalid="setCustomValidity('Distancia Invalida')" class="form-control">
                                         </div>
                                     </div>
                                     <div class="pull-left" id="distance-radio-btn">
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" checked onclick="calculateSpeedPace();" name="distanceUnit" value="k" /> Km
+                                                <input type="radio" id="km" onclick="calculateSpeedPace();" class="distanceUnit" name="distanceUnit" value="k" /> Km
                                             </label>
                                         </div>
                                         <div class="radio">
                                             <label>
-                                                <input type="radio" onclick="calculateSpeedPace();" name="distanceUnit" value="m" /> Metros
+                                                <input type="radio" id="m" onclick="calculateSpeedPace();" class="distanceUnit" name="distanceUnit" value="m" /> Metros
                                             </label>
                                         </div>
                                     </div>
