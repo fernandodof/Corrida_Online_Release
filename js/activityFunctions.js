@@ -3,15 +3,14 @@ function calculateSpeedPace() {
         var seconds = convertToSeconds($('#time').val());
         var minutes = convertToMinutes($('#time').val());
         var distance = parseFloat($('#distance').val().replace(/,/g, '.'));
-
-
+        
         if ($('input[name=distanceUnit]:checked').val() === 'k') {
             distance = distance * 1000;
         }
 
         if (seconds > 0) {
             var speed = (distance / seconds) * 3.6;
-            var pace = minutes / (distance / 1000);
+            var pace = (seconds/60) / (distance / 1000);
 
             $('#avgSpeed').val(Math.round(speed * 100) / 100 + ' km/h');
             $('#avgPace').val((Math.round(pace * 100) / 100 + ' min/km'));
@@ -34,14 +33,14 @@ function validateDistance(str) {
 
 function convertToSeconds(str) {
     var timeArray = str.split(':');
-    var seconds = (+timeArray[0]) * 60 * 60 + (+timeArray[1]) * 60 + (+timeArray[2]);
+    var seconds = ((parseInt(timeArray[0]) * 60) * 60) + (parseInt(timeArray[1]) * 60) + (parseInt(timeArray[2]));
     return seconds;
 }
 
 function convertToMinutes(str) {
     var timeArray = str.split(':');
-    var seconds = (+timeArray[0]) * 60 + (+timeArray[1]) + (+Math.floor(timeArray[2] / 60));
-    return seconds;
+    var minutes = (parseInt(timeArray[0]) * 60) + (parseInt(timeArray[1])) + (parseInt(timeArray[2]) / 60);
+    return minutes;
 }
 
 function resetMyForm($form) {
